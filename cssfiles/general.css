@@ -1,0 +1,80 @@
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+  { margin:0; padding:0; border: none;
+    vertical-align: baseline;  
+    font-family: inherit; font-style: inherit;  font-size: 100%; }
+a img,:link img,:visited img
+  { border:none }
+:link,:visited
+  { text-decoration:none }
+
+body { text-align:center;
+       background:#eb8;
+       font-family:verdana, sans-serif; }
+
+#wrapper { width:960px; min-height:512px; margin:10px auto; position:relative; text-align:left; z-index:0;
+           border:1px solid #600; background-color:#ffd; color:#333;
+           /* start shadow */
+             -moz-box-shadow: 0px 0px 12px #600;
+	     -webkit-box-shadow: 0px 0px 12px #600;
+	     box-shadow: 0px 0px 12px #600;
+	     /* For IE 8 */
+	     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#660000')";
+	     /* For IE 5.5 - 7 */
+	     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#660000');
+           /* close shadow */
+         }
+#header  { background:#fea; text-align:center;  }
+
+#columnwrapper { background:#fd8;  } /* set background to right column background */
+
+#left  { width:759px; display:inline-block; vertical-align:top; padding:10px; margin-right:-5px; /* inline-block spacing fix */
+         position:relative; background:#ec8; }
+#right { width:180px; display:inline-block; vertical-align:top; padding:10px 0; position:relative; text-align:center; background:#fd8;}
+
+
+#footer   { margin:0; padding:.5em; color:#600; background-color:#fea; text-align:center; }
+#footer a { color:#600; text-decoration:none; }
+
+#menu                   { position:relative;  }
+#menu .nodrop           { position:relative; margin-bottom:5px; cursor:pointer;  
+                          display:inline-block; margin-right:-3px; /* inline-block spacing fix */ }
+#menu .nodrop  a        { display:block; padding:15px 10px; text-decoration:none; position:relative; z-index:inherit; }
+#menu .menu             { position:relative; margin-bottom:5px; cursor:pointer; padding:15px 10px; 
+                          display:inline-block; margin-right:-3px; /* inline-block spacing fix */ }
+#menu .menu  a          { display:block; padding:5px 0px; text-decoration:none; position:relative; z-index:inherit; }
+#menu .menu .submenu    { position:absolute; top:48px; left:0px; 
+                          border-top:1px solid #000; border-left:1px solid #000; border-right:1px solid #000;  }
+#menu .menu .submenu a  { padding:12px 10px; width:100px; display:block; text-decoration:none; 
+                          border-bottom:1px solid #000; position:relative; }
+/** display block allows anchor to be completely mouse sensitive **/
+
+#right img { margin-top:5px; }
+
+#left p  { margin:5px 20px; text-indent:50px; }
+#left ul { margin-left:80px; }
+#left li { margin-top:8px; }
+#left h2 { margin:5px 20px; font-weight:bold; color:#600; }
+
+#contactform tr td:first-child { text-align:right; }
+
+a:link    {color:#600;} /* unvisited link */
+a:visited {color:#600;} /* visited link */
+a:hover   {color:#00a;} /* mouse over link */
+a:active  {color:#b00;} /* selected link */
+
+.pageTitle { text-align:center;
+             color:#363; font-weight:bold; width:auto; border:4px solid #363; padding:5px;
+             margin: 0 0 .5em 0; font-family:sans-serif; font-size:1.2em; }
+  
+.notice { color:#600; font-weight:bold; font-size:1.2em; margin:10px 20px 5px 20px; }
+
+.button { background:#fc9; width:60px; height:25px; padding:5px 0 0 0; cursor:pointer; margin:5px auto 5px; }
+.thumbbox { float:left; width:130px; margin:20px 0 0 20px; text-align:center; height:220px;
+            border:2px solid #600;  }
+
+div.list { margin:0 0 0 30px; }
+
+#left .dynamic             { position:relative; padding:10px 0 0 0; }
+#left .dynamic .mycontent  { display:none; }
+#left .dynamic .showbutton { cursor:pointer; padding:5px 10px; margin:0px 0 0 50px; color:#600; display:inline; border:1px solid #600; }
+#left .dynamic .hidebutton { cursor:pointer; padding:5px 10px; margin:0 0 0 50px; color:#600; display:inline; border:1px solid #600; }

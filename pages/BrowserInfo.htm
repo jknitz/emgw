@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Browser Info</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js' ></script>
+</head>
+<body>
+<div id='info'>
+
+</div>
+</body>
+<script type='text/javascript'>
+
+function pageWidth() { return window.innerWidth != null ? 
+  window.innerWidth : document.documentElement && document.documentElement.clientWidth ?
+  document.documentElement.clientWidth : document.body != null ?
+  document.body.clientWidth : null; }
+
+
+var info = "<table>\n";
+    info += "<tr><td>window.navigator.userAgent: </td><td>" + window.navigator.userAgent + "</td></tr>";
+    info += "<tr><td>window.navigator.appCodeName: </td><td>" + window.navigator.appCodeName + "</td></tr>";
+    info += "<tr><td>window.navigator.appName: </td><td>" + window.navigator.appName + "</td></tr>";
+    info += "<tr><td>window.navigator.appVersion: </td><td>" + window.navigator.appVersion + "</td></tr>";
+    info += "<tr><td>window.navigator.cookieEnabled: </td><td>" + window.navigator.cookieEnabled + "</td></tr>";
+    info += "<tr><td>window.navigator.onLine: </td><td>" + window.navigator.onLine + "</td></tr>";
+    info += "<tr><td>window.navigator.platform: </td><td>" + window.navigator.platform + "</td></tr>";
+    info += "<tr><td>window page width: </td><td>" + pageWidth() + "px</td></tr>";
+    info += '<tr><td>body font-size: </td><td>' + parseInt($('body').css('font-size').split('px')[0]) + "px</td></tr>";
+
+    info += "</table>";
+$('#info').html(info);
+
+</script>
+
+
